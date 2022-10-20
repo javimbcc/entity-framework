@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using mierda_entity_framework.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<mierda_entity_frameworkContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("mierda_entity_frameworkContext") ?? throw new InvalidOperationException("Connection string 'mierda_entity_frameworkContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
