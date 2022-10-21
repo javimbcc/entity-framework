@@ -6,7 +6,6 @@ namespace mierda_entity_framework.DAL
 {
     public class SchoolContext : DbContext
     {
-        //DTOs modelo de manejo de datos de los datos de las tablas
 
         public SchoolContext() : base("SchoolContext")
         {

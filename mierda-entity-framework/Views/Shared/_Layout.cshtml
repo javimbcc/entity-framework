@@ -26,11 +26,14 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
-                        <li class="nav-link text-dark">@Html.ActionLink("Students", "Index", "Student")</li>
+                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Students" asp-action="Index">Student</a>
+                        </li>
+                        @*<li class="nav-link text-dark">@Html.ActionLink("Students", "Index", "Student")</li>*@
                         <li class="nav-link text-dark">@Html.ActionLink("Courses", "Index", "Course")</li>
                         <li class="nav-link text-dark">@Html.ActionLink("Instructors", "Index", "Instructor")</li>
                         <li class="nav-link text-dark">@Html.ActionLink("Departments", "Index", "Department")</li>
-                        <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Student">Students</a></li>
+                        @*<li><a class="nav-link text-dark" href="../Views/Home/Student.cshtml"</a>Student</li>*@
                     </ul>
                 </div>
             </div>
